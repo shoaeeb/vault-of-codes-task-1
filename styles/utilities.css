@@ -1,0 +1,76 @@
+.hidden {
+  display: none !important;
+}
+
+.searchAnimation {
+  animation-name: topDown;
+  animation-duration: 1s;
+}
+
+.visible {
+  animation-name: downTop;
+  animation-duration: 1s;
+}
+
+@keyframes topDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes downTop {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+/* for smallScreen navbar */
+.flex {
+  justify-content: center;
+}
+
+.smallScreen {
+  display: flex;
+  flex-direction: column;
+  max-height: 300px;
+  overflow-y: scroll;
+  position: absolute;
+  top: 78px;
+  left: 0;
+  width: 350px;
+  background-color: transparent;
+  padding: 20px 0;
+  z-index: 10;
+  padding-bottom: 0px;
+  background-color: white;
+}
+
+.smallScreen a {
+  transform: translateY(7rem);
+}
+.smallScreen a {
+  display: inline-block !important;
+  width: 100%;
+  padding: 10px 5px;
+  font-size: 15px;
+}
+
+.smallScreen a:hover {
+  background-color: #f7f7f7ff;
+}
+
+.social {
+  width: 100%;
+  text-align: left;
+  height: fit-content;
+  background-color: #f7f7f7ff;
+  font-size: 50px;
+  margin-top: 95px;
+  padding: 20px 0;
+}
